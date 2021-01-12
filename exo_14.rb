@@ -12,4 +12,11 @@ else
   email_number +=1
 end
 end
-puts email_array 
+
+i = 0
+while email_array[i] do
+  if i % 2 == 1
+   puts "#{email_array[i]}"
+  end
+  i += 1
+end
