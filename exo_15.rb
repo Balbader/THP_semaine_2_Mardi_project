@@ -1,12 +1,11 @@
-puts "Salut, bienvenue dans ma super pyramide ! Entre un numero entre 1 et 25:"
+puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu compris entre 1 et 25 ?"
 print "> "
-n = gets.chomp.to_i
+n = gets.to_i
 
-if n > 25
-  puts "Error!!!!!!!!!!!!"
+if n < 1 || n > 25
+    print "Erreur, met des étages entre 1 et 25 !"
 else
-for i in 1..n
-  puts "#{Array.new(i, "#").join('')}  #{Array.new(n - i, " ").join('')}"
-  sleep(0.1)
-end
+    for i in 1..n
+    puts "#{Array.new(i, "#").join('')}  #{Array.new(n - i, " ").join('')}"
+    end
 end
