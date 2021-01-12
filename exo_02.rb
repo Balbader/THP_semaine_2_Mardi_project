@@ -2,4 +2,4 @@ puts "What's your name?"
 print "> "
 user_name = gets.chomp
 
-puts "Hello, #{user_name}"
+puts "Hello, #{user_name}!"
