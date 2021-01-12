@@ -6,6 +6,7 @@ puts "Voici la pyramide :"
 i = 0
 j = 0
 char = "#"
+print " " * (nb - nb / 2)
 while nb >= i do
   print " " * (nb / 2)
   puts "#{char}" * (2 * j + 1)
